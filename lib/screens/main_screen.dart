@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class MainScreen extends StatefulWidget {
-   final String? email;
+    final String? email;
   static String id = 'mainSCreen';
   const MainScreen({super.key, required this.email});
   @override

@@ -58,12 +58,12 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
     if (isOnboardingComplete == true) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const LoginScreen()),
+        MaterialPageRoute(builder: (context) =>  OnboardingScreen ()),
       );
     } else {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => OnboardingScreen()),
+        MaterialPageRoute(builder: (context) =>LoginScreen ()),
       );
       // Set the onboarding complete flag to true
       await prefs.setBool('isOnboardingComplete', true);

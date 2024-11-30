@@ -5,7 +5,6 @@ import 'package:ecommerce_app/screens/auth/login.dart';
 import 'package:ecommerce_app/screens/auth/widgets/customTextBox.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
- 
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -204,16 +203,6 @@ class _ProfilePageState extends State<ProfilePage> {
             fontSize: 25,
             color: Colors.white,
             fontWeight: FontWeight.bold,
-          ),
-        ),
-        leading: IconButton(
-          onPressed: () {
-            // Implement the action you want when the back button is pressed
-            Navigator.of(context).pop();
-          },
-          icon: Icon(
-            Icons.arrow_back,
-            color: Colors.white,
           ),
         ),
       ),
